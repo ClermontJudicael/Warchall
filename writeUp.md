@@ -158,5 +158,3 @@ print (r.content)
 
 ```
 Ensuite il faut juste décoder la sortie obtenu.
-
-## 20_live_rce
