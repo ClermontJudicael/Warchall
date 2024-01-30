@@ -48,6 +48,21 @@ cat README2.md
 
 Dans ce challenge, il y a un fichier README.md dans le repertoire, il suffit juste donc d'executer la commande cat sur le fichier pour voir son contenu, rien de plus.
 
+## SSH...Z is sleeping
+
+Pour ce challenge, nous avons besoin de nous connecter à ssh en tant que level8. Il faut executer cette commande pour avoir une clé:
+
+```
+ssh-keygen -l -E md5 -f /home/level/08_sshz/backups/authorized_keys.backup
+```
+Ensuite, nous avons besoin d'aller sur le site https://hdm.io/tools/debian-openssl/ et télécharger un fichier zip contenant des clés privés. 
+
+En comparant la clé obtenu avec la commande précédente avec le nom des fichiers, et on obtien un fichier du même nom (sans le ":"). Avec la commande scp, on copie ce fichier dans notre repertoire personnelle warchall avec la commande suivante:
+
+```
+scp -P 19198 /repertoire/vers/le/fichier -23669 username@warchall.net:/home/user/username
+```
+Il ne nous reste plus quèà s'identifier avec cette clé pour se connecter en tant que level8
 
 ## 10_choose_your_path
 
