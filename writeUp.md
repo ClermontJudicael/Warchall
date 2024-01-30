@@ -104,6 +104,23 @@ Le contenu est ceci (le flag est censuré):
 
 ## 11_choose_your_path2
 
+D'abord il faut créer un lien symbolique en utilisant la commande:
+
+```
+ln -s /bin/sh ~/wc
+
+```
+
+Maintenant il faut rediriger la variable d'environnement par défaut à ~ avec la commande 
+```
+PATH=~
+```
+
+Ensuite il nous faut executer la commande suivant et la solution s'affichera
+
+```
+./charp2 '/bin/cat/ solution.txt 1>&2'
+```
 
 ## 12_pytong
 
@@ -158,3 +175,5 @@ print (r.content)
 
 ```
 Ensuite il faut juste décoder la sortie obtenu.
+
+## 20_live_rce
